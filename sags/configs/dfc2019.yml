@@ -1,0 +1,23 @@
+iterations: 20000
+densify_from_iter: 500
+densify_until_iter: 10000
+densify_grad_threshold: 0.0002  # 0.00015
+densification_interval: 100
+opacity_reset_interval: 3000
+position_lr_max_steps: 20000
+position_lr_final: 0.0000016
+position_lr_init: 0.00016
+scaling_lr: 0.0005
+sh_degree: 3
+
+uncertainty_warmup_start: 1000
+uncertainty_warmup_iters: 500
+uncertainty_protected_iters: 150  # 150
+uncertainty_regularizer_weight: 0.5
+uncertainty_mode: "dino+mssim-v2"   # l2reg   dino+mssim  dino+mssim-v2   disabled
+uncertainty_preserve_sky: false
+
+appearance_enabled: true
+appearance_n_fourier_freqs: 4
+
+num_sky_gaussians: 0
